@@ -3,16 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Te Llevo Duoc</title>
+    <style>
+        /* Establece una imagen de fondo */
+        .background {
+            background-image: url('fondo.jpg');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative; /* Añade una posición relativa al contenedor */
+        }
+        
+        .logo-img {
+            display: block;
+            margin: 0 auto; /* Centra horizontalmente */
+            max-width: 75%; /* Ajusta el ancho máximo del logo según tus necesidades */
+            height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+        }
+          
+        /* Define un estilo para el recuadro con bordes redondeados */
+        .custom-box {
+            background-color: rgba(0, 23, 39, 0.75); /* Cambia el fondo a un blanco suave (#f0f0f0) */
+            border-radius: 20px; /* Bordes redondeados de 10 píxeles (ajusta según tus necesidades) */
+            padding: 10px; /* Espaciado interno (ajústalo según tus necesidades) */
+            color: rgb(242, 242, 242); /* Cambia el color del texto a un azul oscuro (#000082) */
+            text-align: center; /* Alinea horizontalmente el texto si quieres */
+        }
+    </style>
 </head>
-<body>
+<body class="background">
+    <img src="logo.png" alt="Imagen de perfil" class="logo-img"></img>
     <script>
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-        if (/android|iPhone/i.test(userAgent)) {
-            document.write('<h1>"Estás usando un dispositivo movil"</h1>');
+        if (/Android|iPhone/i.test(userAgent)) {
+            document.write('<h1 class="custom-box">"Estás usando un dispositivo movil"</h1>');
         }
         else {
-            document.write('<h1>"Probablemente estás en un escritorio"</h1>');
+            document.write('<h1 class="custom-box">"Probablemente estás en un escritorio"</h1>');
         }
     </script>
 </body>
