@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        if (/android|iPhone/i.test(userAgent)) {
+            document.write('<h1>"Estás usando un dispositivo movil"</h1>');
+        }
+        else {
+            document.write('<h1>"Probablemente estás en un escritorio"</h1>');
+        }
+    </script>
+</body>
+</html>
