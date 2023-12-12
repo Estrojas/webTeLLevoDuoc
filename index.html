@@ -33,11 +33,10 @@
 </head>
 <body class="background">
     <img src="logo.png" alt="Imagen de perfil" class="logo-img"></img>
-    <button class="custom-box" href="estrojas.github.io/webTeLLevoDuoc/tellevoduoc.apk" download >Descarga la Apk</button>
     <script>
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
         if (/Android|iPhone/i.test(userAgent)) {
-            document.write('<button class="custom-box" href="estrojas.github.io/webTeLLevoDuoc/tellevoduoc.apk" download >Descarga la Apk</button>');
+            document.write('<a href="https://estrojas.github.io/webTeLLevoDuoc/tellevoduoc.apk"><button class="custom-box">Descarga la Apk</button></a>');
         }
         else {
             document.write('<h1 class="custom-box">Descarga la Apk desde este codigo QR</h1>'
