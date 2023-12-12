@@ -33,13 +33,14 @@
 </head>
 <body class="background">
     <img src="logo.png" alt="Imagen de perfil" class="logo-img"></img>
+    
     <script>
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
         if (/Android|iPhone/i.test(userAgent)) {
-            document.write('<h1 class="custom-box">"Estás usando un dispositivo movil"</h1>');
+            document.write('<button class="custom-box" href="https://estrojas.github.io/webTeLLevoDuoc/tellevoduoc.apk">Descarga la Apk</button>');
         }
         else {
-            document.write('<h1 class="custom-box">"Probablemente estás en un escritorio"</h1>');
+            document.write('<h1 class="custom-box">"Estás usando un dispositivo de escritorio"</h1>');
         }
     </script>
 </body>
