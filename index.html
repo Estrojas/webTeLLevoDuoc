@@ -28,6 +28,12 @@
             padding: 10px; /* Espaciado interno (ajústalo según tus necesidades) */
             color: rgb(242, 242, 242); /* Cambia el color del texto a un azul oscuro (#000082) */
             text-align: center; /* Alinea horizontalmente el texto si quieres */
+            margin: auto;
+        }
+        .center {
+            margin: auto;
+            width: 10%;
+            padding: 10px;
         }
     </style>
 </head>
@@ -36,7 +42,7 @@
     <script>
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
         if (/Android|iPhone/i.test(userAgent)) {
-            document.write('<a href="https://estrojas.github.io/webTeLLevoDuoc/tellevoduoc.apk"><button class="custom-box">Descarga la Apk</button></a>');
+            document.write('<div class="center"><a href="https://estrojas.github.io/webTeLLevoDuoc/tellevoduoc.apk"><button class="custom-box">Descarga la Apk</button></a></div>');
         }
         else {
             document.write('<h1 class="custom-box">Descarga la Apk desde este codigo QR</h1>'
