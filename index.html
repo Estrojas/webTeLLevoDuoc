@@ -20,6 +20,12 @@
             max-width: 75%; /* Ajusta el ancho máximo del logo según tus necesidades */
             height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
         }
+         .logo-img-pc {
+            display: block;
+            margin: 0 auto; /* Centra horizontalmente */
+            max-width: 50%; /* Ajusta el ancho máximo del logo según tus necesidades */
+            height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+        }
           
         /* Define un estilo para el recuadro con bordes redondeados */
         .custom-box {
@@ -31,23 +37,40 @@
             margin: auto;
         }
         .center {
-            margin: auto;
-            width: 10%;
-            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
     </style>
 </head>
 <body class="background">
-    <img src="logo.png" alt="Imagen de perfil" class="logo-img"></img>
+    
     <script>
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
         if (/Android|iPhone/i.test(userAgent)) {
+            document.write('<img src="logo.png" class="logo-img"></img>');
+            document.writedocument.write('<div class="custom-box">'+
+                            '<p>'+
+                                'Te llevo Duoc es una aplicación que te Permite'+
+                                'compartir viajes con tus compañeros de Duoc UC.'+ 
+                                'De esta manera se te facilita el transporte y ademas'+
+                                'podrás ahorrar dinero compartiendo tu vehiculo.'+
+                            '</p>');
             document.write('<div class="center"><a href="https://estrojas.github.io/webTeLLevoDuoc/tellevoduoc.apk"><button class="custom-box">Descarga la Apk</button></a></div>');
         }
         else {
-            document.write('<h1 class="custom-box">Descarga la Apk desde este codigo QR</h1>'
-                            + '<img src="qr.png" class="logo-img"></img>');
-            document.write();
+            document.write('<img src="logo.png" alt="Imagen de perfil" class="logo-img-pc"></img>');
+            document.write('<div class="custom-box">'+
+                            '<h3>'+
+                                'Te llevo Duoc es una aplicación que te Permite'+
+                                'compartir viajes con tus compañeros de Duoc UC.'+ 
+                                'De esta manera se te facilita el transporte y ademas'+
+                                'podrás ahorrar dinero compartiendo tu vehiculo.'+
+                            '</h3>'+
+                            '<h1>Descarga la Apk desde este codigo QR</h1>'
+                            + '<img src="qr.png" class="logo-img"></img></div>');
+            
         }
     </script>
 </body>
